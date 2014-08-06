@@ -1,2 +1,46 @@
 @import "config";
 @import "reset";
+
+body {
+    font-family: "letter-gothic-std", monospace;
+    font-weight: 700;
+    padding: 0 2%;
+    background: #F5FCFF;
+    color: #2B1600;
+    @media (min-width: 670px){
+        font-size: 105%;
+        padding: 0 10%;
+    }
+    @media (min-width: 850px){
+        font-size: 105%;
+        padding: 0 12%;
+    }
+    @media (min-width: 906px){
+        font-size: 110%;
+        line-height: 2;
+        padding: 0 15%;
+    }
+    @media (min-width: 980px){
+        font-size: 110%;
+        padding: 0 20%;
+    }
+    @media (min-width: 1140px){
+        font-size: 125%;
+        padding: 0 21%;
+    }
+    @media (min-width: 1370px){
+        padding: 0 25%;
+    }
+    @media (min-width: 1656px){
+        padding: 0 27.5%;
+    }
+}
+
+.container {
+    width: 90%;
+    min-width: 288px;
+    max-width: 960px;
+    margin: 10% auto;
+}
+
+a { color: #4A5A4A; text-decoration: none; border-bottom: 1px dotted #444444; }

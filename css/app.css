@@ -12,6 +12,78 @@ button {
 /* line 3, ../sass/_reset.scss */
 p, ul, ol, dl, blockquote, pre, td, th, label, textarea {
   font-size: 1em;
-  line-height: 1.4;
-  margin: 1.4em 0;
+  line-height: 1.7;
+  margin: 1.7em 0;
+}
+
+/* line 4, ../sass/app.scss */
+body {
+  font-family: "letter-gothic-std", monospace;
+  font-weight: 700;
+  padding: 0 2%;
+  background: #F5FCFF;
+  color: #2B1600;
+}
+@media (min-width: 670px) {
+  /* line 4, ../sass/app.scss */
+  body {
+    font-size: 105%;
+    padding: 0 10%;
+  }
+}
+@media (min-width: 850px) {
+  /* line 4, ../sass/app.scss */
+  body {
+    font-size: 105%;
+    padding: 0 12%;
+  }
+}
+@media (min-width: 906px) {
+  /* line 4, ../sass/app.scss */
+  body {
+    font-size: 110%;
+    line-height: 2;
+    padding: 0 15%;
+  }
+}
+@media (min-width: 980px) {
+  /* line 4, ../sass/app.scss */
+  body {
+    font-size: 110%;
+    padding: 0 20%;
+  }
+}
+@media (min-width: 1140px) {
+  /* line 4, ../sass/app.scss */
+  body {
+    font-size: 125%;
+    padding: 0 21%;
+  }
+}
+@media (min-width: 1370px) {
+  /* line 4, ../sass/app.scss */
+  body {
+    padding: 0 25%;
+  }
+}
+@media (min-width: 1656px) {
+  /* line 4, ../sass/app.scss */
+  body {
+    padding: 0 27.5%;
+  }
+}
+
+/* line 39, ../sass/app.scss */
+.container {
+  width: 90%;
+  min-width: 288px;
+  max-width: 960px;
+  margin: 10% auto;
+}
+
+/* line 46, ../sass/app.scss */
+a {
+  color: #4A5A4A;
+  text-decoration: none;
+  border-bottom: 1px dotted #444444;
 }
