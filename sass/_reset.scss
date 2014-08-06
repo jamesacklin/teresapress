@@ -1,0 +1,7 @@
+html, body, blockquote, ul, ol, form, button { margin: 0; padding: 0; }
+button { border: 0; }
+p, ul, ol, dl, blockquote, pre, td, th, label, textarea {
+  font-size: 1em;
+  line-height: $line-height;
+  margin: $line-height * 1em 0;
+}

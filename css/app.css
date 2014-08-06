@@ -1,0 +1,17 @@
+/* line 1, ../sass/_reset.scss */
+html, body, blockquote, ul, ol, form, button {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 2, ../sass/_reset.scss */
+button {
+  border: 0;
+}
+
+/* line 3, ../sass/_reset.scss */
+p, ul, ol, dl, blockquote, pre, td, th, label, textarea {
+  font-size: 1em;
+  line-height: 1.4;
+  margin: 1.4em 0;
+}
