@@ -4,14 +4,20 @@
 ::selection {
     background: #4570B2;
     color: #F5F9FF;
+    opacity: 1;
 }
 ::-moz-selection {
     background: #4570B2;
     color: #F5F9FF;
+    opacity: 1;
+}
+
+* {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
 }
 
 body {
-    text-rendering: optimizeLegibility;
     font-family: "letter-gothic-std", monospace;
     font-weight: 700;
     padding: 0 2%;
@@ -64,8 +70,13 @@ a {
 }
 
 .alignleft {
-    float: left;
-    margin: 0.25em 1em 1em 0;
+    display: block;
+    margin: 0 0 1em 0;
+    @media (min-width: 850px){
+        display: inline-block;
+        float: left;
+        margin: 1em 1em 1em 0;
+    }
 }
 
 .wp-caption-text {
@@ -73,11 +84,24 @@ a {
     font-size: 0.6em;
 }
 
+header[role=banner] {
+    margin: 16.6666%;
+    text-align: center;
+    h1 a { color: #2B1600; border-bottom: 0; }
+    h1 a:hover { color: #B2AA9A; border-bottom: 1px solid #B2AA9A; }
+}
+
 article {
-    margin: 33.3333% auto;
-    &:first {
-        margin: 0 auto 33.3333%
+    margin: 0 auto 33.3333%;
+    header {
+        border-width: 1px 0 1px 0;
+        border-style: solid;
+        border-color: #DFDFDF;
     }
+}
+
+#disqus_thread {
+    margin-top: 16.666666%;
 }
 
 h2 {
@@ -85,7 +109,73 @@ h2 {
     a { color: #2B1600; border-bottom: 0; }
 }
 
+blockquote {
+    opacity: 0.8;
+    font-size: 0.9em;
+    padding: 0 10%;
+    font-style: italic;
+}
+
 .meta {
     font-size: 75%;
+    margin-top: 0;
     opacity: 0.75;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 75%;
+    margin-bottom: 10em;
+    @media (min-width: 850px){
+        flex-direction: row;
+    }
+    .widget {
+        width: 100%;
+        border-top: 1px solid #DFDFDF;
+        margin-bottom: 2em;
+        @media (min-width: 850px) {
+            width: 48%;
+        }
+    }
+}
+
+ul {
+    padding-left: 2em;
+}
+
+.searchform {
+    .screen-reader-text {
+        display: block;
+        margin: 0;
+        line-height: 0;
+        position: relative;
+        height: 0;
+        width: 0;
+        overflow: hidden;
+        visibility: hidden;
+    }
+    input[type=text]{
+        font-family: "letter-gothic-std", monospace;
+        background: #F5F9FF;
+        border: 1px solid #DFDFDF;
+        padding: 0.25em;
+        font-size: 16px;
+        &:focus { background: #FFFFFF; }
+    }
+    input[type=submit]{
+        -webkit-appearance: none;
+        font-family: "letter-gothic-std", monospace;
+        outline: 0;
+        font-size: 16px;
+        padding: 0.25em;
+        background: #FFFFFF;
+        border: 1px solid #DFDFDF;
+        cursor: pointer;
+        &:hover {
+            background: #DFDFDF;
+        }
+    }
 }

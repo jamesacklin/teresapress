@@ -18,7 +18,9 @@
 <?php if ( have_posts() ): ?>
 <?php while ( have_posts() ) : the_post(); ?>
 	<article>
-		<h2><a href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+		<header>
+			<h2><a href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+		</header>
 		<?php the_content(); ?>
 	</article>
 <?php endwhile; ?>
