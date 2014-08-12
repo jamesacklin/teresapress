@@ -17,7 +17,20 @@ p, ul, ol, dl, blockquote, pre, td, th, label, textarea {
 }
 
 /* line 4, ../sass/app.scss */
+::selection {
+  background: #4570B2;
+  color: #F5F9FF;
+}
+
+/* line 8, ../sass/app.scss */
+::-moz-selection {
+  background: #4570B2;
+  color: #F5F9FF;
+}
+
+/* line 13, ../sass/app.scss */
 body {
+  text-rendering: optimizeLegibility;
   font-family: "letter-gothic-std", monospace;
   font-weight: 700;
   padding: 0 2%;
@@ -25,21 +38,20 @@ body {
   color: #2B1600;
 }
 @media (min-width: 670px) {
-  /* line 4, ../sass/app.scss */
+  /* line 13, ../sass/app.scss */
   body {
     font-size: 105%;
     padding: 0 10%;
   }
 }
 @media (min-width: 850px) {
-  /* line 4, ../sass/app.scss */
+  /* line 13, ../sass/app.scss */
   body {
-    font-size: 105%;
     padding: 0 12%;
   }
 }
 @media (min-width: 906px) {
-  /* line 4, ../sass/app.scss */
+  /* line 13, ../sass/app.scss */
   body {
     font-size: 110%;
     line-height: 2;
@@ -47,33 +59,31 @@ body {
   }
 }
 @media (min-width: 980px) {
-  /* line 4, ../sass/app.scss */
+  /* line 13, ../sass/app.scss */
   body {
-    font-size: 110%;
     padding: 0 20%;
   }
 }
 @media (min-width: 1140px) {
-  /* line 4, ../sass/app.scss */
+  /* line 13, ../sass/app.scss */
   body {
-    font-size: 125%;
     padding: 0 21%;
   }
 }
 @media (min-width: 1370px) {
-  /* line 4, ../sass/app.scss */
+  /* line 13, ../sass/app.scss */
   body {
     padding: 0 25%;
   }
 }
 @media (min-width: 1656px) {
-  /* line 4, ../sass/app.scss */
+  /* line 13, ../sass/app.scss */
   body {
     padding: 0 27.5%;
   }
 }
 
-/* line 39, ../sass/app.scss */
+/* line 49, ../sass/app.scss */
 .container {
   width: 90%;
   min-width: 288px;
@@ -81,9 +91,51 @@ body {
   margin: 10% auto;
 }
 
-/* line 46, ../sass/app.scss */
+/* line 56, ../sass/app.scss */
 a {
-  color: #4A5A4A;
+  color: #4570B2;
+  border-bottom: 1px solid #4570B2;
   text-decoration: none;
-  border-bottom: 1px dotted #444444;
+}
+/* line 60, ../sass/app.scss */
+a:hover {
+  color: #B2AA9A;
+  border-bottom: 1px solid #B2AA9A;
+}
+
+/* line 66, ../sass/app.scss */
+.alignleft {
+  float: left;
+  margin: 0.25em 1em 1em 0;
+}
+
+/* line 71, ../sass/app.scss */
+.wp-caption-text {
+  margin: 0;
+  font-size: 0.6em;
+}
+
+/* line 76, ../sass/app.scss */
+article {
+  margin: 33.3333% auto;
+}
+/* line 78, ../sass/app.scss */
+article:first {
+  margin: 0 auto 33.3333%;
+}
+
+/* line 83, ../sass/app.scss */
+h2 {
+  line-height: 1.6;
+}
+/* line 85, ../sass/app.scss */
+h2 a {
+  color: #2B1600;
+  border-bottom: 0;
+}
+
+/* line 88, ../sass/app.scss */
+.meta {
+  font-size: 75%;
+  opacity: 0.75;
 }

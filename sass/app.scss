@@ -1,7 +1,17 @@
 @import "config";
 @import "reset";
 
+::selection {
+    background: #4570B2;
+    color: #F5F9FF;
+}
+::-moz-selection {
+    background: #4570B2;
+    color: #F5F9FF;
+}
+
 body {
+    text-rendering: optimizeLegibility;
     font-family: "letter-gothic-std", monospace;
     font-weight: 700;
     padding: 0 2%;
@@ -12,7 +22,7 @@ body {
         padding: 0 10%;
     }
     @media (min-width: 850px){
-        font-size: 105%;
+        // font-size: 105%;
         padding: 0 12%;
     }
     @media (min-width: 906px){
@@ -21,11 +31,11 @@ body {
         padding: 0 15%;
     }
     @media (min-width: 980px){
-        font-size: 110%;
+        // font-size: 110%;
         padding: 0 20%;
     }
     @media (min-width: 1140px){
-        font-size: 125%;
+        // font-size: 125%;
         padding: 0 21%;
     }
     @media (min-width: 1370px){
@@ -43,4 +53,39 @@ body {
     margin: 10% auto;
 }
 
-a { color: #4A5A4A; text-decoration: none; border-bottom: 1px dotted #444444; }
+a {
+    color: #4570B2;
+    border-bottom: 1px solid #4570B2;
+    text-decoration: none;
+    &:hover {
+        color: #B2AA9A;
+        border-bottom: 1px solid #B2AA9A;
+    }
+}
+
+.alignleft {
+    float: left;
+    margin: 0.25em 1em 1em 0;
+}
+
+.wp-caption-text {
+    margin: 0;
+    font-size: 0.6em;
+}
+
+article {
+    margin: 33.3333% auto;
+    &:first {
+        margin: 0 auto 33.3333%
+    }
+}
+
+h2 {
+    line-height: 1.6;
+    a { color: #2B1600; border-bottom: 0; }
+}
+
+.meta {
+    font-size: 75%;
+    opacity: 0.75;
+}
