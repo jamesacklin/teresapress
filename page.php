@@ -20,6 +20,7 @@
 	<header>
 		<h2><?php the_title(); ?></h2>
 	</header>
+	<?php the_content(); ?>
 <?php endwhile; ?>
 
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/footer','parts/shared/html-footer' ) ); ?>
