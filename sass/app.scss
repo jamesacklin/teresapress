@@ -87,8 +87,21 @@ a {
 header[role=banner] {
     margin: 16.6666%;
     text-align: center;
-    h1 a { color: #2B1600; border-bottom: 0; }
-    h1 a:hover { color: #B2AA9A; border-bottom: 1px solid #B2AA9A; }
+    h1 {
+        padding: 0.1em;
+        background: #2B1600;
+        text-transform: uppercase;
+        font-size: 1.25em;
+        letter-spacing: 0.15em;
+        &:hover {
+            background: #4570B2;
+        }
+        a {
+            color: #DFDFDF;
+            border-bottom: 0;
+        }
+    }
+    p { font-size: 0.8em; }
 }
 
 article {
